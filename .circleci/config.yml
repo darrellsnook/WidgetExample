@@ -13,8 +13,8 @@ jobs:
       - run:
           name: Download Dependencies
           command: sudo chmod +x ./gradlew
-#      - run:
-#          name: Analyze on SonarCloud
-#          command: gradle build sonarqube -Dsonar.projectKey="darrellsnook_WidgetExample" -Dsonar.organization="darrellsnook" -Dsonar.host.url="https://sonarcloud.io"
+      - run:
+          name: Analyze on SonarCloud
+          command: ./gradlew build sonarqube -Dsonar.projectKey="darrellsnook_WidgetExample" -Dsonar.organization="darrellsnook" -Dsonar.host.url="https://sonarcloud.io" --info
 
 
