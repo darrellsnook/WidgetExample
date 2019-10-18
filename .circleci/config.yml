@@ -15,6 +15,6 @@ jobs:
           command: sudo chmod +x ./gradlew
       - run:
           name: Analyze on SonarCloud
-          command: echo pwd | ./gradlew build sonarqube -Dsonar.projectKey="darrellsnook_WidgetExample" -Dsonar.organization="darrellsnook" -Dsonar.host.url="https://sonarcloud.io" --info
+          command: echo pwd | ./gradlew build sonarqube -Dsonar.login="85a3d2a182f21e3d66017a390cb7a5a4187d1014" -Dsonar.projectKey="darrellsnook_WidgetExample" -Dsonar.organization="darrellsnook" -Dsonar.host.url="https://sonarcloud.io" --info
 
 
