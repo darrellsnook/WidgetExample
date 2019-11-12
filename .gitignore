@@ -18,6 +18,7 @@
 *.zip
 *.tar.gz
 *.rar
+*.bin
 
 #!gradle/wrapper/*.jar
 
